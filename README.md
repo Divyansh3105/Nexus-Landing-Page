@@ -12,7 +12,7 @@ A fully responsive, visually stunning personal portfolio landing page featuring 
 
 ## 🚀 Live Demo
 
-> _Deploy to GitHub Pages and add your live link here._
+https://divyansh3105.github.io/Nexus-Landing-Page/
 
 ---
 
@@ -33,12 +33,12 @@ A fully responsive, visually stunning personal portfolio landing page featuring 
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Semantic structure |
-| CSS3 | Styling, animations, glassmorphism, responsive layout |
-| Vanilla JavaScript | Scroll effects, Intersection Observer, hamburger menu |
-| Google Fonts (Inter & Outfit) | Typography |
+| Technology                    | Purpose                                               |
+| ----------------------------- | ----------------------------------------------------- |
+| HTML5                         | Semantic structure                                    |
+| CSS3                          | Styling, animations, glassmorphism, responsive layout |
+| Vanilla JavaScript            | Scroll effects, Intersection Observer, hamburger menu |
+| Google Fonts (Inter & Outfit) | Typography                                            |
 
 ---
 
@@ -73,47 +73,48 @@ xdg-open index.html   # Linux
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots of your project here._
-
----
-
 ## 🧑‍💻 Key Implementation Details
 
 ### Scroll-Aware Navbar
+
 ```js
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 ```
+
 The navbar transitions from fully transparent to a frosted-glass blurred background when the user scrolls past 50px.
 
 ### Skill Bar Animation (Intersection Observer)
+
 ```js
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Animate skill fill width to data-width value
-    }
-  });
-}, { threshold: 0.3 });
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Animate skill fill width to data-width value
+      }
+    });
+  },
+  { threshold: 0.3 },
+);
 ```
 
 ### Mobile Menu Toggle
+
 Hamburger icon animates into an X on click, and the nav links slide in with a smooth transition.
 
 ---
 
 ## 📋 Task Requirements (Prodigy Infotech)
 
-| Requirement | Status |
-|-------------|--------|
-| Responsive navigation menu | ✅ |
-| Color/style change on scroll | ✅ |
-| Hover effects on nav links | ✅ |
-| Mobile-friendly hamburger menu | ✅ |
-| Clean, well-structured code | ✅ |
+| Requirement                    | Status |
+| ------------------------------ | ------ |
+| Responsive navigation menu     | ✅     |
+| Color/style change on scroll   | ✅     |
+| Hover effects on nav links     | ✅     |
+| Mobile-friendly hamburger menu | ✅     |
+| Clean, well-structured code    | ✅     |
 
 ---
 
