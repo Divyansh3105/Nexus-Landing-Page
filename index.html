@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Prodigy Infotech Task-01 — A responsive landing page with an interactive navigation menu that changes color on scroll and hover."
+    />
+    <title>Prodigy Infotech | Task-01 — Responsive Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" id="nav-logo">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">Prodigy<span class="logo-accent">Dev</span></span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home"   class="nav-link active" id="link-home">Home</a></li>
+          <li><a href="#about"  class="nav-link" id="link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+          <li><a href="#work"   class="nav-link" id="link-work">Work</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-cta" id="nav-cta">Get in Touch</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for Internship</span>
+        </div>
+        <h1 class="hero-title">
+          Building <span class="gradient-text">Digital</span><br />
+          Experiences That<br />
+          <span class="gradient-text">Matter</span>
+        </h1>
+        <p class="hero-subtitle">
+          A passionate web developer crafting responsive, interactive, and
+          visually stunning web applications — one pixel at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary" id="btn-view-work">View My Work</a>
+          <a href="#about" class="btn btn-ghost" id="btn-about">About Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Dedication</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <span class="filename">index.html</span>
+          </div>
+          <div class="code-body">
+            <div class="code-line"><span class="tag">&lt;nav</span> <span class="attr">class=</span><span class="str">"navbar"</span><span class="tag">&gt;</span></div>
+            <div class="code-line indent"><span class="tag">&lt;ul</span> <span class="attr">class=</span><span class="str">"nav-links"</span><span class="tag">&gt;</span></div>
+            <div class="code-line indent2"><span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="str">"#home"</span><span class="tag">&gt;</span></div>
+            <div class="code-line indent3 typing">Home<span class="cursor">|</span></div>
+            <div class="code-line indent2"><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></div>
+            <div class="code-line indent"><span class="tag">&lt;/ul&gt;</span></div>
+            <div class="code-line"><span class="tag">&lt;/nav&gt;</span></div>
+            <div class="code-line empty"></div>
+            <div class="code-line"><span class="comment">/* Scroll to transform */</span></div>
+            <div class="code-line"><span class="keyword">window</span>.addEventListener(</div>
+            <div class="code-line indent"><span class="str">'scroll'</span>, () =&gt; {'{'}</div>
+            <div class="code-line indent2 highlight-line">navbar.classList</div>
+            <div class="code-line indent2">.toggle(<span class="str">'scrolled'</span>)</div>
+            <div class="code-line indent">{'}'}</div>
+            <div class="code-line">);</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <div class="about-image">
+              <div class="avatar-placeholder">
+                <span>👩‍💻</span>
+              </div>
+            </div>
+            <div class="about-badge-floating">
+              <span>🚀</span>
+              <div>
+                <strong>Web Developer</strong>
+                <small>Intern @ Prodigy</small>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3>Crafting the Web, One Line at a Time</h3>
+            <p>
+              I'm a passionate and detail-oriented web developer with a keen eye
+              for design and a love for clean, maintainable code. Currently
+              pursuing my internship at Prodigy Infotech, I'm honing my skills
+              in building responsive and interactive web interfaces.
+            </p>
+            <p>
+              My journey in web development started with curiosity and has grown
+              into a dedicated pursuit of excellence. I believe great websites
+              aren't just functional — they tell a story.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item" id="highlight-html">
+                <span class="h-icon">🎯</span>
+                <div>
+                  <strong>Pixel Perfect</strong>
+                  <small>Attention to UI detail</small>
+                </div>
+              </div>
+              <div class="highlight-item" id="highlight-responsive">
+                <span class="h-icon">📱</span>
+                <div>
+                  <strong>Responsive Design</strong>
+                  <small>Mobile-first approach</small>
+                </div>
+              </div>
+              <div class="highlight-item" id="highlight-interactive">
+                <span class="h-icon">⚡</span>
+                <div>
+                  <strong>Interactive UX</strong>
+                  <small>Smooth animations</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card" id="skill-html">
+            <div class="skill-icon">🌐</div>
+            <h4>HTML5</h4>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="95"><div class="skill-fill"></div></div>
+              <span>95%</span>
+            </div>
+          </div>
+          <div class="skill-card" id="skill-css">
+            <div class="skill-icon">🎨</div>
+            <h4>CSS3</h4>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="88"><div class="skill-fill"></div></div>
+              <span>88%</span>
+            </div>
+          </div>
+          <div class="skill-card" id="skill-js">
+            <div class="skill-icon">⚡</div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="80"><div class="skill-fill"></div></div>
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="skill-card" id="skill-responsive">
+            <div class="skill-icon">📱</div>
+            <h4>Responsive Design</h4>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="92"><div class="skill-fill"></div></div>
+              <span>92%</span>
+            </div>
+          </div>
+          <div class="skill-card" id="skill-git">
+            <div class="skill-icon">🔧</div>
+            <h4>Git & GitHub</h4>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="75"><div class="skill-fill"></div></div>
+              <span>75%</span>
+            </div>
+          </div>
+          <div class="skill-card" id="skill-ui">
+            <div class="skill-icon">✨</div>
+            <h4>UI/UX Design</h4>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="70"><div class="skill-fill"></div></div>
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK SECTION ===== -->
+    <section id="work" class="work section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I've Built</span>
+          <h2 class="section-title">My <span class="gradient-text">Work</span></h2>
+        </div>
+        <div class="work-grid">
+          <div class="work-card featured" id="work-nav">
+            <div class="work-card-inner">
+              <div class="work-tag">Task 01</div>
+              <div class="work-preview nav-preview">
+                <div class="mini-navbar">
+                  <div class="mini-logo">⬡ Dev</div>
+                  <div class="mini-links">
+                    <span>Home</span><span>About</span><span>Work</span>
+                  </div>
+                </div>
+                <div class="mini-hero">
+                  <div class="mini-title"></div>
+                  <div class="mini-sub"></div>
+                  <div class="mini-btn"></div>
+                </div>
+              </div>
+              <h3>Interactive Navigation Menu</h3>
+              <p>A responsive navbar that transforms on scroll with smooth hover effects and mobile hamburger menu.</p>
+              <div class="work-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-card" id="work-stopwatch">
+            <div class="work-card-inner">
+              <div class="work-tag">Task 02</div>
+              <div class="work-preview clock-preview">
+                <div class="mini-clock">00:00:00</div>
+                <div class="mini-controls">
+                  <div class="mc-btn green">▶</div>
+                  <div class="mc-btn red">■</div>
+                </div>
+              </div>
+              <h3>Stopwatch App</h3>
+              <p>A functional stopwatch with start, stop, and reset features. Includes lap time tracking.</p>
+              <div class="work-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-card" id="work-weather">
+            <div class="work-card-inner">
+              <div class="work-tag">Task 03</div>
+              <div class="work-preview weather-preview">
+                <div class="mini-weather">
+                  <span class="wi">☁️</span>
+                  <div>
+                    <div class="wt">24°C</div>
+                    <div class="wl">Mumbai, IN</div>
+                  </div>
+                </div>
+              </div>
+              <h3>Weather App</h3>
+              <p>Real-time weather data using OpenWeatherMap API with dynamic backgrounds and icons.</p>
+              <div class="work-tech">
+                <span>HTML</span><span>CSS</span><span>API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Say Hello</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p>I'm currently open to new opportunities and internships. Whether you have a question, a project idea, or just want to say hello — my inbox is always open!</p>
+            <div class="contact-links">
+              <a href="mailto:hello@prodigydev.com" class="contact-link" id="contact-email">
+                <span class="cl-icon">📧</span>
+                <span>hello@prodigydev.com</span>
+              </a>
+              <a href="#" class="contact-link" id="contact-github">
+                <span class="cl-icon">🐙</span>
+                <span>github.com/prodigydev</span>
+              </a>
+              <a href="#" class="contact-link" id="contact-linkedin">
+                <span class="cl-icon">💼</span>
+                <span>linkedin.com/in/prodigydev</span>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-send">Send Message ✉️</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-logo">⬡ ProdigyDev</span>
+          <p>Built with ❤️ as part of <strong>Prodigy Infotech</strong> Web Development Internship — Task 01</p>
+          <div class="footer-socials">
+            <a href="#" id="footer-github" aria-label="GitHub">🐙</a>
+            <a href="#" id="footer-linkedin" aria-label="LinkedIn">💼</a>
+            <a href="#" id="footer-twitter" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 ProdigyDev. All rights reserved.</p>
+          <p>PRODIGY_WD_01 — Responsive Landing Page with Interactive Navigation</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
